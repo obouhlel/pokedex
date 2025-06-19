@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+@import "@nuxt/ui";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  color: var(--color-green-950);
+  background-color: var(--color-green-50);
+}
+
+.dark body {
+  color: var(--color-green-50);
+  background-color: var(--color-green-950);
+}
