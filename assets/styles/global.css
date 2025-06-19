@@ -9,11 +9,11 @@ body, html {
 }
 
 body {
-  color: var(--color-green-950);
-  background-color: var(--color-green-50);
+  color: black;
+  background-color: var(--color-sky-50);
 }
 
 .dark body {
-  color: var(--color-green-50);
-  background-color: var(--color-green-950);
+  color: white;
+  background-color: var(--color-sky-950);
 }

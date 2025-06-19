@@ -13,11 +13,11 @@ onMounted(() => {
 })
 </script>
 <template>
-  <header class="w-full h-12 px-2 py-3 mb-2 bg-green-200 dark:bg-green-800 flex justify-between">
-    <h1 class="text-xl font-bold">Games</h1>
+  <header class="w-full h-12 px-2 py-3 mb-2 bg-sky-200 dark:bg-sky-800 flex justify-between">
+    <h1 class="text-xl font-bold">Pokedex</h1>
     <div class="space-x-1 mt-[-3px]">
       <button v-for="mode in modes" :key="mode.value" class="cursor-pointer text-2xl font-bold transition-colors"
-        :class="mounted && colorMode.preference === mode.value ? 'text-green-500' : 'text-black dark:text-white'"
+        :class="mounted && colorMode.preference === mode.value ? 'text-sky-500' : 'text-black dark:text-white'"
         :aria-label="mode.label" @click="colorMode.preference = mode.value">
         <Icon :name="mode.icon" />
       </button>
