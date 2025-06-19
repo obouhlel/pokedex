@@ -5,6 +5,14 @@ export default defineNuxtConfig({
 
   css: ['~/assets/styles/global.css'],
 
+  imports: {
+    autoImport: true,
+  },
+
+  image: {
+    domains: ['raw.githubusercontent.com']
+  },
+
   colorMode: {
     preference: "system",
     fallback: "light",
